@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cs66kkebs160t"]
+
+[ext_resource type="Texture2D" uid="uid://dgdg4irkflixh" path="res://data/character/cat/tex.png" id="1_8l0mb"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_8l0mb")
+texture_filter = 0

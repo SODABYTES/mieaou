@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://vwco3fnnwcqv"]
+
+[ext_resource type="PackedScene" uid="uid://18tsfwbsafmh" path="res://data/character/cat/cat.glb" id="1_8153i"]
+
+[node name="Character" type="Node3D"]
+
+[node name="cat" parent="." instance=ExtResource("1_8153i")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
