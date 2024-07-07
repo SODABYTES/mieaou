@@ -1,9 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://vwco3fnnwcqv"]
+[gd_scene load_steps=4 format=3 uid="uid://vwco3fnnwcqv"]
 
+[ext_resource type="Script" path="res://data/character/cat/cat.gd" id="1_5p3ei"]
 [ext_resource type="PackedScene" uid="uid://18tsfwbsafmh" path="res://data/character/cat/cat.glb" id="1_8153i"]
+[ext_resource type="AudioStream" uid="uid://b1vjqoa641858" path="res://data/character/cat/mieaou.wav" id="3_qwl1n"]
 
 [node name="Character" type="Node3D"]
+script = ExtResource("1_5p3ei")
 
 [node name="cat" parent="." instance=ExtResource("1_8153i")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_qwl1n")
+pitch_scale = 0.5
