@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b1vjqoa641858"
-path="res://.godot/imported/mieaou.wav-7f0ab2463d9f00f77de7a762d5c6b3bb.sample"
+path="res://.godot/imported/mieaou.wav-608470832ec564e8b06bf52b34854a85.sample"
 
 [deps]
 
-source_file="res://data/character/cat/mieaou.wav"
-dest_files=["res://.godot/imported/mieaou.wav-7f0ab2463d9f00f77de7a762d5c6b3bb.sample"]
+source_file="res://scene/character/cat/mieaou.wav"
+dest_files=["res://.godot/imported/mieaou.wav-608470832ec564e8b06bf52b34854a85.sample"]
 
 [params]
 

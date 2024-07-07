@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://18tsfwbsafmh"
-path="res://.godot/imported/cat.glb-168afa2be415adcb5b70008d1632b447.scn"
+path="res://.godot/imported/cat.glb-89ec0a935961a9ea076e87be1e0c1e34.scn"
 
 [deps]
 
-source_file="res://data/character/cat/cat.glb"
-dest_files=["res://.godot/imported/cat.glb-168afa2be415adcb5b70008d1632b447.scn"]
+source_file="res://scene/character/cat/cat.glb"
+dest_files=["res://.godot/imported/cat.glb-89ec0a935961a9ea076e87be1e0c1e34.scn"]
 
 [params]
 
@@ -33,7 +33,7 @@ _subresources={
 "materials": {
 "cat": {
 "use_external/enabled": true,
-"use_external/path": "res://data/character/cat/cat.tres"
+"use_external/path": "res://scene/character/cat/cat.tres"
 }
 }
 }

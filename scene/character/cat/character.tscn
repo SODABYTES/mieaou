@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://vwco3fnnwcqv"]
 
-[ext_resource type="Script" path="res://data/character/cat/cat.gd" id="1_5p3ei"]
-[ext_resource type="PackedScene" uid="uid://18tsfwbsafmh" path="res://data/character/cat/cat.glb" id="1_8153i"]
-[ext_resource type="AudioStream" uid="uid://b1vjqoa641858" path="res://data/character/cat/mieaou.wav" id="3_qwl1n"]
+[ext_resource type="Script" path="res://scene/character/cat/cat.gd" id="1_5p3ei"]
+[ext_resource type="PackedScene" uid="uid://18tsfwbsafmh" path="res://scene/character/cat/cat.glb" id="1_8153i"]
+[ext_resource type="AudioStream" uid="uid://b1vjqoa641858" path="res://scene/character/cat/mieaou.wav" id="3_qwl1n"]
 
 [node name="Character" type="Node3D"]
 script = ExtResource("1_5p3ei")
