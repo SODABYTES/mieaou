@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=320
 window/size/viewport_height=240
+window/size/mode=4
 window/size/window_width_override=960
 window/size/window_height_override=720
 window/stretch/mode="viewport"
@@ -26,6 +27,10 @@ window/stretch/mode="viewport"
 [filesystem]
 
 import/blender/enabled=false
+
+[physics]
+
+common/physics_ticks_per_second=20
 
 [rendering]
 

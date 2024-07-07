@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b187wa3q6po1f"]
+
+[ext_resource type="Script" path="res://scene/entity/peeper/peeper.gd" id="1_5so20"]
+
+[node name="Peeper" type="Node3D"]
+script = ExtResource("1_5so20")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)

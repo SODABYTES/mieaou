@@ -1,10 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://qeqiq61rk58t"]
+[gd_scene load_steps=3 format=3 uid="uid://qeqiq61rk58t"]
 
 [ext_resource type="PackedScene" uid="uid://vwco3fnnwcqv" path="res://data/character/cat/character.tscn" id="1_p6ws3"]
+[ext_resource type="PackedScene" uid="uid://b187wa3q6po1f" path="res://scene/entity/peeper/peeper.tscn" id="2_6irys"]
 
 [node name="Test" type="Node3D"]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.965926, -0.0669873, 0.25, 0, 0.965926, 0.258819, -0.258819, -0.25, 0.933013, 0.5, 1.25, 2)
-
 [node name="Character" parent="." instance=ExtResource("1_p6ws3")]
+
+[node name="Peeper" parent="." instance=ExtResource("2_6irys")]
+transform = Transform3D(0.965926, -0.0669873, 0.25, 0, 0.965926, 0.258819, -0.258819, -0.25, 0.933013, 0, 0.5, 0)
