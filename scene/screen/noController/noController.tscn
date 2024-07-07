@@ -1,19 +1,52 @@
-[gd_scene load_steps=2 format=3 uid="uid://damuyo3fwrapf"]
+[gd_scene load_steps=7 format=3 uid="uid://damuyo3fwrapf"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_cl2rg"]
-line_spacing = -8.0
+[ext_resource type="PackedScene" uid="uid://dah2c0vnys2pg" path="res://scene/screen/noController/u64Controller/u64Controller.glb" id="1_7c3ix"]
+[ext_resource type="Script" path="res://scene/screen/noController/noController.gd" id="1_i4ak0"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7jgvt"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[sub_resource type="Sky" id="Sky_8bngb"]
+sky_material = SubResource("ProceduralSkyMaterial_7jgvt")
+
+[sub_resource type="Environment" id="Environment_wieih"]
+background_mode = 1
+background_color = Color(0.498039, 0, 0, 1)
+sky = SubResource("Sky_8bngb")
+ambient_light_source = 3
+
+[sub_resource type="LabelSettings" id="LabelSettings_twfv2"]
+line_spacing = -4.0
+font_size = 12
+
+[node name="noController" type="Node"]
+script = ExtResource("1_i4ak0")
+
+[node name="u64Controller" parent="." instance=ExtResource("1_7c3ix")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_wieih")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.25, 0.433013, 0, 0.866025, 0.5, -0.5, -0.433013, 0.75, 0, 0, 0)
+
+[node name="CameraPivot" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.247059, 0, 0, 1)
 
-[node name="Label" type="Label" parent="ColorRect"]
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -21,13 +54,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -128.0
-offset_top = -128.0
+offset_top = -96.0
 offset_right = 128.0
-offset_bottom = 128.0
+offset_bottom = -32.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "POWER OFF CONTROL DECK AND INSERT CONTROLLER INTO CONTROLLER SOCKET 1"
-label_settings = SubResource("LabelSettings_cl2rg")
+text = "POWER OFF CONTROL DECK AND INSERT CONTROLLER INTO SOCKET ONE"
+label_settings = SubResource("LabelSettings_twfv2")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
