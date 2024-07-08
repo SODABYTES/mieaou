@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://qeqiq61rk58t"]
 
-[ext_resource type="PackedScene" uid="uid://vwco3fnnwcqv" path="res://scene/character/cat/character.tscn" id="1_p6ws3"]
+[ext_resource type="PackedScene" uid="uid://uey5o1e62j8i" path="res://scene/entity/characterContainer/characterContainer.tscn" id="1_nvh28"]
 [ext_resource type="PackedScene" uid="uid://b187wa3q6po1f" path="res://scene/entity/peeper/peeper.tscn" id="2_6irys"]
 [ext_resource type="Shader" path="res://asset/shader/3PointFilter.gdshader" id="3_hjluu"]
 [ext_resource type="Texture2D" uid="uid://b5r5pn1wgnnj4" path="res://icon.svg" id="4_41c7f"]
@@ -19,7 +19,7 @@ size = Vector2(8, 8)
 
 [node name="Test" type="Node3D"]
 
-[node name="Character" parent="." instance=ExtResource("1_p6ws3")]
+[node name="CharacterContainer" parent="." instance=ExtResource("1_nvh28")]
 
 [node name="Peeper" parent="." instance=ExtResource("2_6irys")]
 transform = Transform3D(0.965926, -0.0669873, 0.25, 0, 0.965926, 0.258819, -0.258819, -0.25, 0.933013, 0.75, 1.5, 2.5)

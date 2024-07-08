@@ -19,12 +19,13 @@ config/icon="res://icon.svg"
 [autoload]
 
 Game="*res://scene/autoload/game/game.tscn"
+Controllers="*res://scene/autoload/controllers/controllers.tscn"
 
 [display]
 
 window/size/viewport_width=320
 window/size/viewport_height=240
-window/size/mode=4
+window/size/mode=3
 window/size/window_width_override=960
 window/size/window_height_override=720
 window/stretch/mode="viewport"

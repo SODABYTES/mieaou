@@ -1,4 +1,10 @@
 extends Node
+var character = [
+	"cat",
+	"cat",
+	"cat",
+	"cat"
+]
 
 func _ready():
 	if Input.get_connected_joypads().size() == 0:
