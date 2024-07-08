@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://bn8iyps70bbd7"]
+
+[ext_resource type="Script" path="res://scene/character/toot/toot.gd" id="1_k3o73"]
+[ext_resource type="Shader" path="res://asset/shader/3PointFilter.gdshader" id="1_pxg0r"]
+[ext_resource type="Texture2D" uid="uid://dautxtf51bkdh" path="res://scene/character/toot/deleteme/deleteMe.png" id="2_s41ts"]
+[ext_resource type="AudioStream" uid="uid://b1vjqoa641858" path="res://scene/character/cat/mieaou.wav" id="4_loyeb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_600lo"]
+render_priority = 0
+shader = ExtResource("1_pxg0r")
+shader_parameter/texSize = Vector2(64, 64)
+shader_parameter/tex = ExtResource("2_s41ts")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8565b"]
+material = SubResource("ShaderMaterial_600lo")
+
+[node name="Character" type="Node3D"]
+script = ExtResource("1_k3o73")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("QuadMesh_8565b")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_loyeb")
