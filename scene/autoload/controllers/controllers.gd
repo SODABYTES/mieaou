@@ -13,12 +13,12 @@ var buttonR = [false,false,false,false]
 func _ready():
 	pass # Replace with function body.
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	for i in 4:
 		
 		#stick
-		stick[i].x = clampi((Input.get_joy_axis(i, JOY_AXIS_LEFT_X) * 128) + 128, 0, 255)
-		stick[i].y = clampi((Input.get_joy_axis(i, JOY_AXIS_LEFT_Y) * 128) + 128, 0, 255)
+		stick[i].x = clampi(int((Input.get_joy_axis(i, JOY_AXIS_LEFT_X) * 128) + 128), 0, 255)
+		stick[i].y = clampi(int((Input.get_joy_axis(i, JOY_AXIS_LEFT_Y) * 128) + 128), 0, 255)
 		
 		#button
 		buttonA[i] = Input.is_joy_button_pressed(i, JOY_BUTTON_A)
@@ -35,7 +35,6 @@ func _physics_process(delta):
 			buttonR[i] = true
 		else:
 			buttonR[i] = false
-	var awesome:int = (Input.get_joy_axis(0, JOY_AXIS_LEFT_Y) * 128) + 128
 
 func getStickAsFloat(controller):
 	var result:Vector2 = Vector2(0,0)

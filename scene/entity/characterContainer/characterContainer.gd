@@ -5,10 +5,6 @@ extends Node3D
 func _ready():
 	spawnCharacter()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func spawnCharacter():
 	if get_node_or_null("Character"):
 		get_node("Character").queue_free()
