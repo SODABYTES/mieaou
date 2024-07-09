@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scene/character/toot/toot.gd" id="1_k3o73"]
 [ext_resource type="Shader" path="res://asset/shader/3PointFilter.gdshader" id="1_pxg0r"]
 [ext_resource type="Texture2D" uid="uid://dautxtf51bkdh" path="res://scene/character/toot/deleteme/deleteMe.png" id="2_s41ts"]
-[ext_resource type="AudioStream" uid="uid://b1vjqoa641858" path="res://scene/character/cat/mieaou.wav" id="4_loyeb"]
+[ext_resource type="AudioStream" uid="uid://baxyusep2df0r" path="res://scene/character/toot/ocarina.wav" id="4_22lxt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_600lo"]
 render_priority = 0
@@ -22,4 +22,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = SubResource("QuadMesh_8565b")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("4_loyeb")
+stream = ExtResource("4_22lxt")
